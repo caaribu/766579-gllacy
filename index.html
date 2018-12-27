@@ -14,23 +14,21 @@
     <input class="visually-hidden" id="page-btn3" type="radio" name="pagenator">
     <!-- Site-wrapper-start-->
     <section class="site-wrapper"> 
-
       <!-- container-start-->
       <div class="container">
-
         <!-- Main-header-start --> 
         <header class="main-header">
           <img class="main-logo" src="img/svg/logo.svg" width="155" height="64" alt="Логотип">
 
           <!-- Header-main-navigation-start -->
           <nav class="main-navigation">
-            <!-- Header-site-navigation-start -->
-            <ul class="navigation-menu site-navigation">
+            <!-- Site-navigation-start -->
+            <ul class="site-navigation navigation-menu ">
               <li>
                 <a class="navigation-link" href="#">
                   <span>Каталог</span>
                 </a>
-                <div class="navigation-popup">
+                <div class="navigation-popup site-navigation-catalog">
                   <ul class="navigation-catalog">
                     <li class="title-catalog">Новинки</li>
                     <li><a href="catalog.html">Сливочное</a></li>
@@ -51,25 +49,25 @@
                 </a>
               </li>
             </ul>
-            <!-- Header-site-navigation-End -->
+            <!-- Site-navigation-End -->
 
-            <!-- Header-user-navigation-start -->
-            <ul class="navigation-menu user-navigation">
-              <li>
+            <!-- User-navigation-start -->
+            <ul class="user-navigation navigation-menu ">
+              <li class="string-search">
                 <a class="navigation-link nav-search" href="#"></a>
                 <div class="navigation-popup">
-                  <!-- -Modal-search-start-->
+                  <!-- -Modal-Search-start-->
                   <form class="modal modal-search" action="" method="post">
                     <label class="visually-hidden" for="user-question">Что ищем?</label>
                     <input class="form-field" type="search" name="question" id="user-question" placeholder="Что ищем?">
                   </form>
-                  <!-- -Modal-search-End-->
+                  <!-- -Modal-Search-End-->
                 </div>
               </li>                   
-              <li>
+              <li class="string-login">
                 <a class="navigation-link login-link" href="#">Вход</a>
                 <div class="navigation-popup">
-                  <!-- -Modal-login-start -->
+                  <!-- -Modal-Login-start -->
                   <form class="modal modal-login" action="" method="post">
                     <label class="visually-hidden" for="user-email">Электронная почта</label>
                     <input class="form-field" type="email" name="login" id="user-email" placeholder="Электронная почта">
@@ -86,26 +84,27 @@
                       </div>
                     </div>
                   </form>
-                  <!-- -Modal-login-End-->
+                  <!-- -Modal-Login-End-->
                 </div>
               </li>                           
               <li>
                 <a class="navigation-link cart" href="#">Пусто</a>
-                <div class="short-contacts">
-                  <h3 class="visually-hidden">время работы</h3>
-                  С 10 до 20, ежедневно<br>
-                  <span class="tel">8 812 450-25-25</span>
-                </div> 
               </li>
             </ul>  
-            <!-- Header-user-navigation-End-->
+            <!--User-navigation-End-->
           </nav>
           <!--Header-main-navigation-End-->
 
-          <!-- Main-container-slider-start-->  
+          <!--Short-contacts-start-->
+          <div class="short-contacts common-navigation">
+            <h3 class="visually-hidden">время работы</h3>
+            С 10 до 20, ежедневно<br>
+            <span class="tel">8 812 450-25-25</span>
+          </div>
+          <!--Short-contacts-End-->
+
+          <!--Main-container-slider-start-->  
           <section class="slider">
-            
-            
             <ul class="slide-list">
               <li id="slide-one" class="visually-hidden">
                 <h3>Крем-брюле и пломбир с малиновым джемом</h3>
@@ -133,7 +132,7 @@
         <!-- Main-container-start-->
         <main class="main-container">
           
-          <!-- Main-features-start-->
+          <!-- Features-start-->
           <section class="feature-list">
             <section class="feature-item">
               <h2 class="visually-hidden">Подарок</h2>
@@ -155,59 +154,90 @@
           </section>                      
           <!-- Main-features-End-->
 
-          <!-- Main-article-ice-start-->
+          <!-- Article-ice-start-->
           <section class="article-ice">    
             <h2 class="visually-hidden">Список мороженого</h2>
             
             <div class="article ice-cream">
-              <a href="#">
-                <img class="ice" src="img/index-ice-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-              </a>
-              <span><b>310</b>/кг</span>
+              <div class="hover-ice">
+                <div class="modal-cover-button">
+                  <a class="button">Быстрый просмотр</a>
+                </div>
+              </div>
+              <img class="ice" src="img/index-ice-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <div class="priсe-type">
+                <b>310</b><span>/кг</span>
+              </div>
+              <h3>
+                <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              </h3>
             </div>
 
             <div class="article coffee-ice">
-              <a href="#">
-                <img class="ice" src="img/index-ice-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
-                <h3>Сливочно-кофейное с кусочками шоколада</h3>
-              </a>
-              <b>380</b><span>/кг</span>
+              <div class="hover-ice">
+                  <div class="modal-cover-button">
+                    <a class="button">Быстрый просмотр</a>
+                  </div>
+                </div>
+              <img class="ice" src="img/index-ice-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+              <div class="priсe-type">
+                <b>380</b><span>/кг</span>
+              </div>
+              <h3>
+                <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+              </h3>
             </div>
 
             <div class="article strawberry-ice">
-              <a href="#">
-                <img class="ice" src="img/index-ice-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">  
-                <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-              </a>
-              <b>355</b><span>/кг</span>
+              <div class="hover-ice">
+                <div class="modal-cover-button">
+                  <a class="button">Быстрый просмотр</a>
+                </div>
+              </div>
+              <img class="ice" src="img/index-ice-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">  
+              <div class="priсe-type">
+                <b>355</b><span>/кг</span>
+              </div>
+              <h3>
+                <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              </h3>
             </div>
 
             <div class="article caramelesirt-ice">
-              <a href="#">
-                <img class="ice" src="img/index-ice-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой"> 
-                <h3>Сливочное крем-брюле с карамельной подливкой</h3>
-              </a>
-              <b>415</b><span>/кг</span>
+              <div class="hover-ice">
+                <div class="modal-cover-button">
+                  <a class="button">Быстрый просмотр</a>
+                </div>
+              </div>
+              <img class="ice" src="img/index-ice-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой"> 
+              <div class="priсe-type">
+                <b>415</b><span>/кг</span>
+              </div>
+              <h3>
+                <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+              </h3>
             </div>
           </section>                     
-          <!-- Main-article-ice-End-->
+          <!-- Article-ice-End-->
 
-          <!-- Main-about-us-start-->
+          <!-- About-us-start-->
           <section class="about-us">    
             <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-            <section class="blok-one">
-              <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-              <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-            </section>
+            <div class="about-us-description">
+              <div class="blok-description">
+                <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+              </div>
 
-            <section class="blok-two">
-              <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-              <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-            </section>
+              <div class="blok-description  blok-description-too">
+                <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+              </div>
+            </div>
           </section>                        
-          <!-- Main-about-us-End-->
-          <!-- Main-news-start-->
+          <!-- About-us-End-->
+         
+          <!-- News-start-->
           <section class="news">    
             <article class="news-blog">
               <h3>Новое в нашем блоге</h3>
@@ -224,7 +254,7 @@
               </div>
             </aside>
           </section>                        
-          <!-- Main-news-End-->
+          <!-- News-End-->
         </main>                     
         <!-- Main-container-End-->
 
@@ -250,15 +280,15 @@
                 <input class="button appointment-button" type="submit" name="submit" value="Отправить">
               </form>
             </div>    
-        </div>                                
+          </div>                                
           <!--Footer-Modal-appointment-End-->
           
           <!-- Footer-map-start-->
           <section class="footer-map">  
             <img src="img/map.jpg" width="100%" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
             <img  class="pin" src="img/pin.png" alt="пин">
-            <h2 class="visually-hidden">Как до нас добраться</h2>
             <div class="form-appointment">
+              <h2 class="visually-hidden">Как до нас добраться</h2>
               Адрес главного офиса<br>и офлайн-магазина:<br>
               <b>ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</b>
               <p>
@@ -300,20 +330,20 @@
               </ul>
             </section>                             
 
-            <section class="footer-main-section">
-              <div class="heart">
-                <a href="">Для поставщиков</a><br>
-                <a href="">О производстве </a>
+            <section class="footer-additional-information">
+              <div class="for-employers">
+                <a class="link" href="#">Для поставщиков</a><br>
+                <a class="link" href="#">О производстве </a>
               </div>
-              <div>
-                <a href="">Наши документы</a><br>
-                <a href="">Экологические стандарты</a>
+              <div class="for-customers">
+                <a class="link" href="#">Наши документы</a><br>
+                <a class="link" href="#">Экологические стандарты</a>
               </div>
             </section>
 
             <section class="copyright">
               <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-htmlacademy.svg" width="110" height="40"></a>
-              <p>Сделано в <a class="siteacademy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
+              <p>Сделано в <a class="siteacademy link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
             </section>
           </section>                
           <!-- Footer-contact-End-->
